@@ -1,0 +1,252 @@
+/* --- General Layout --- */
+body {
+    background-color: #f4f7fa; /* Light grey background for the whole page */
+    margin: 0;
+    font-family: 'Sarabun', sans-serif; /* Recommended for Thai UI */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.content-wrapper {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.main-title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* --- Tabs --- */
+.tabs {
+    margin-bottom: 2rem;
+}
+
+.tab-item {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-item.active {
+    color: #007bff;
+    font-weight: 700;
+    border-bottom-color: #007bff;
+}
+
+/* --- Request List --- */
+.request-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.no-requests {
+    text-align: center;
+    color: #888;
+    font-size: 1.2rem;
+    padding: 3rem;
+    background-color: #fff;
+    border-radius: 16px;
+    min-width: 1500px;
+}
+
+
+/* --- Request Card --- */
+.request-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    min-width: 1500px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex-grow: 1; /* Makes content take available space */
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.card-role {
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-details p {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.card-details span {
+    font-weight: 600;
+    color: #555;
+    margin-right: 0.5rem;
+}
+
+.card-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.request-type-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px dashed;
+    background: none;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.request-type-btn.in {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.request-type-btn.out {
+    color: #fd7e14;
+    border-color: #fd7e14;
+}
+
+.card-footer {
+    display: flex;
+    gap: 1rem;
+}
+
+.approve-btn, .reject-btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.approve-btn {
+    background-color: #28a745;
+}
+
+.reject-btn {
+    background-color: #dc3545;
+}
+
+/* --- ★★★ Styles for Modal (Pop-up) ★★★ --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.modal-content {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}
+
+.modal-content p {
+    margin: 0;
+    color: #555;
+}
+
+.modal-content textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    resize: vertical;
+    box-sizing: border-box; /* Important */
+    
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.modal-confirm-btn,
+.modal-cancel-btn {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-confirm-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-cancel-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+

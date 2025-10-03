@@ -1,0 +1,109 @@
+.main-content {
+    flex: 1;
+    padding: 30px;
+    max-width: 1200px;
+    /* ✅ เพิ่มความกว้างให้ใหญ่ขึ้น */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* ✅ เพิ่มช่องว่างระหว่าง card */
+}
+
+.page-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    align-self: flex-start;
+    /* ทำให้แยกออกจากการจัดกึ่งกลาง */
+}
+
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    /* ✅ ทำให้โค้งนุ่มขึ้น */
+    padding: 30px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+/* ปรับฟอร์มให้อ่านง่ายขึ้น */
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input,
+select,
+textarea {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* ปุ่ม */
+.btn-submit {
+    padding: 14px;
+    background: #1e3523;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background: #25482b;
+}
+
+/* ประวัติคำขอ */
+.request-history {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.request-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 16px 20px;
+    border: 1px solid #eee;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-badge.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-badge.approved {
+    background: #d4edda;
+    color: #155724;
+}

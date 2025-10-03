@@ -1,0 +1,123 @@
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Time Card */
+.time-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.current-time {
+  font-size: 56px;
+  font-weight: bold;
+  color: #2d5016;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.current-date {
+  color: #7f8c8d;
+  font-size: 18px;
+}
+
+/* Location Section */
+.location-section {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.location-options {
+  display: flex;
+  gap: 15px;
+}
+
+.location-btn {
+  flex: 1;
+  padding: 20px;
+  border: 2px solid #e1e8ed;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.location-btn:hover {
+  border-color: #3498db;
+  transform: translateY(-2px);
+}
+
+.location-btn.selected {
+  border-color: #3498db;
+  background: #f8fbff;
+}
+
+.location-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.location-subtitle {
+  font-size: 13px;
+  color: #95a5a6;
+}
+
+/* Button */
+.attendance-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.btn.check-in {
+  padding: 15px 40px;
+  font-size: 18px;
+  border-radius: 12px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn.check-in:hover {
+  background: #219150;
+}
+
+.btn:disabled {
+  background: #bdc3c7 !important;
+  cursor: not-allowed;
+}
+
+/* Status message */
+.status-message-text {
+  color: #2d5016;
+  /* สีเขียวเข้มเหมือนเดิม */
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 15px;
+  text-align: center;
+}
